@@ -6,6 +6,17 @@ This dataset is prepared for training a lightweight classifier (e.g., MobileNetV
 - **Sources Used:** Kaggle 12-class Garbage Classification dataset (supplemented with TrashNet data).
 - *Class Mapping:* The Kaggle `biological` class was mapped to `organic`.
 
+## Dataset Setup
+To recreate the raw dataset images locally, follow these steps:
+1. Download the "Garbage Classification (12 classes)" dataset from Kaggle and save the downloaded `archive.zip` in your `Downloads` folder (or update the script path).
+2. Run the `setup_datasets.py` script, which will automatically clone TrashNet, extract both datasets, and correctly organize them into the `dataset/raw/` directory.
+
+```bash
+python3 setup_datasets.py
+```
+
+After setup, you can run `python3 prepare_dataset.py` to build the final augmented dataset.
+
 ## Final Image Counts (per class/split)
 The `dataset/final` folder contains the following splits (70/20/10 ratio):
 
