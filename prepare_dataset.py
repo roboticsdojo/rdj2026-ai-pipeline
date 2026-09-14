@@ -44,7 +44,7 @@ try:
 except ImportError:
     HAS_ALBUMENTATIONS = False
 
-VALID_CLASSES = ["organic", "metal", "plastic"]
+VALID_CLASSES = ["watermelon", "aluminium_foil", "plastics"]
 IMG_SIZE = (224, 224)  # standard input size for lightweight models like MobileNetV2
 
 
