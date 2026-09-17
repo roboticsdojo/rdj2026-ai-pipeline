@@ -1,0 +1,17 @@
+[project]
+name = "rdj2026-ai-pipeline"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Lenny Ng'ang'a", email = "codewithlennylen254@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+rdj2026-ai-pipeline = "rdj2026_ai_pipeline:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
