@@ -4,3 +4,12 @@ joan.me
 julie.md
 
 garbage_classification/
+
+# Ignore virtual environment
+venv_ubuntu/
+
+# Ignore datasets (follow README instructions to replicate data)
+archive.zip
+archive/
+dataset/raw/
+dataset/final/

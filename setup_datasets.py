@@ -7,7 +7,7 @@ import glob
 # Paths
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 RAW_DIR = os.path.join(BASE_DIR, "dataset", "raw")
-ARCHIVE_ZIP = os.path.join(os.path.expanduser("~"), "Downloads", "archive.zip")
+ARCHIVE_ZIP = os.path.join("/app", "archive.zip")
 TRASHNET_URL = "https://github.com/garythung/trashnet.git"
 
 def main():
