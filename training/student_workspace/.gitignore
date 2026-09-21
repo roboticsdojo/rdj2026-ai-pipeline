@@ -1,2 +1,6 @@
 RDJ2026.v2i.yolov8.zip
-rdj2026-v2i-yolov8/
+rdj2026-v2i-yolov8/train/
+rdj2026-v2i-yolov8/test/
+rdj2026-v2i-yolov8/val/
+rdj2026-v2i-yolov8/exports/
+rdj2026-v2i-yolov8/raw/
