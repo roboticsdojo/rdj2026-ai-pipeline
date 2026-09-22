@@ -1,8 +1,11 @@
+
+training/.vscode/
 joan.me
 julie.md
 
-
 garbage_classification/
+feature/RDI-127-annotate-dataset
 
 .env
 venv/
+main

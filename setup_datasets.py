@@ -12,8 +12,8 @@ TRASHNET_URL = "https://github.com/garythung/trashnet.git"
 
 def main():
     print("Setting up datasets...")
-    os.makedirs(os.path.join(RAW_DIR, "watermelon"), exist_ok=True)
-    os.makedirs(os.path.join(RAW_DIR, "aluminium_foil"), exist_ok=True)
+    os.makedirs(os.path.join(RAW_DIR, "organic"), exist_ok=True)
+    os.makedirs(os.path.join(RAW_DIR, "metals"), exist_ok=True)
     os.makedirs(os.path.join(RAW_DIR, "plastics"), exist_ok=True)
 
     # 1. Handle Kaggle Archive
@@ -27,21 +27,17 @@ def main():
             zip_ref.extractall(tmp_kaggle)
         
         # Kaggle classes
-        # biological -> watermelon
-        # (Skipped: We only want watermelon images here, not general biological waste)
+        # biological -> organic
         biological_dir = os.path.join(tmp_kaggle, "garbage_classification", "biological")
-        # if os.path.exists(biological_dir):
-        #     for f in glob.glob(os.path.join(biological_dir, "*.jpg")):
-        #         shutil.copy(f, os.path.join(RAW_DIR, "watermelon", os.path.basename(f)))
-        print("Note: Skipped importing Kaggle's general 'biological' waste. Please add your watermelon images to dataset/raw/watermelon/")
+        if os.path.exists(biological_dir):
+            for f in glob.glob(os.path.join(biological_dir, "*.jpg")):
+                shutil.copy(f, os.path.join(RAW_DIR, "organic", os.path.basename(f)))
         
-        # metal -> aluminium_foil
-        # (Skipped: We only want aluminium foil images here, not general metal waste)
+        # metal -> metals
         metal_dir = os.path.join(tmp_kaggle, "garbage_classification", "metal")
-        # if os.path.exists(metal_dir):
-        #     for f in glob.glob(os.path.join(metal_dir, "*.jpg")):
-        #         shutil.copy(f, os.path.join(RAW_DIR, "aluminium_foil", os.path.basename(f)))
-        print("Note: Skipped importing Kaggle's general 'metal' waste. Please add your aluminium foil images to dataset/raw/aluminium_foil/")
+        if os.path.exists(metal_dir):
+            for f in glob.glob(os.path.join(metal_dir, "*.jpg")):
+                shutil.copy(f, os.path.join(RAW_DIR, "metals", os.path.basename(f)))
 
         # plastic -> plastics
         plastic_dir = os.path.join(tmp_kaggle, "garbage_classification", "plastic")
@@ -67,11 +63,10 @@ def main():
         with zipfile.ZipFile(trashnet_zip, 'r') as zip_ref:
             zip_ref.extractall(tmp_trashnet)
         
-        # (Skipped: We only want aluminium foil here)
         trashnet_metal = os.path.join(tmp_trashnet, "dataset-resized", "metal")
-        # if os.path.exists(trashnet_metal):
-        #     for f in glob.glob(os.path.join(trashnet_metal, "*.jpg")):
-        #         shutil.copy(f, os.path.join(RAW_DIR, "aluminium_foil", "trashnet_" + os.path.basename(f)))
+        if os.path.exists(trashnet_metal):
+            for f in glob.glob(os.path.join(trashnet_metal, "*.jpg")):
+                shutil.copy(f, os.path.join(RAW_DIR, "metals", "trashnet_" + os.path.basename(f)))
                 
         trashnet_plastic = os.path.join(tmp_trashnet, "dataset-resized", "plastic")
         if os.path.exists(trashnet_plastic):

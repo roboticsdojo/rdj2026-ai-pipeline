@@ -3,8 +3,8 @@ prepare_dataset.py
 
 Takes raw captured/downloaded images sorted into:
     dataset/raw/organic/
-    dataset/raw/metal/
-    dataset/raw/plastic/
+    dataset/raw/metals/
+    dataset/raw/plastics/
 
 and produces a clean, split, augmented dataset at:
     dataset/final/train/<class>/...
@@ -44,7 +44,7 @@ try:
 except ImportError:
     HAS_ALBUMENTATIONS = False
 
-VALID_CLASSES = ["watermelon", "aluminium_foil", "plastics"]
+VALID_CLASSES = ["organic", "metals", "plastics"]
 IMG_SIZE = (224, 224)  # standard input size for lightweight models like MobileNetV2
 
 
