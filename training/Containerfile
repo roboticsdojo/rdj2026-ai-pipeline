@@ -21,7 +21,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir \
     jupyterlab \
-    ultralytics
+    ultralytics \
+    mlflow
 
 # Fix Numpy / PyTorch compatibility issue
 RUN pip install "numpy<2.0.0"
