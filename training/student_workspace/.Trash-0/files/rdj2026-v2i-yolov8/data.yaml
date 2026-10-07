@@ -1,0 +1,14 @@
+path: rdj2026-v2i-yolov8
+train: ./train/images
+val: ./valid/images
+test: ./test/images
+
+nc: 3
+names: ['metal', 'organic', 'plastic']
+
+roboflow:
+  workspace: nikita-kamau
+  project: rdj2026
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/nikita-kamau/rdj2026/dataset/2
