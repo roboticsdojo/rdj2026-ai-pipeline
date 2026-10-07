@@ -22,7 +22,8 @@ RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir \
     jupyterlab \
     ultralytics \
-    mlflow
+    mlflow \
+    jupyter-server-proxy
 
 # Fix Numpy / PyTorch compatibility issue
 RUN pip install "numpy<2.0.0"
