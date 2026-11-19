@@ -1,0 +1,7 @@
+2026-09-24 09:38:35,544 - INFO - nvidia_smi_gpu_selector.py:39 - No GPU chosen, Selected GPU 1
+2026-09-24 09:55:20,354 - INFO - nvidia_smi_gpu_selector.py:39 - No GPU chosen, Selected GPU 1
+2026-11-19 22:39:00,232 - INFO - __init__.py:28 - No GPU chosen and no suitable GPU found, falling back to CPU.
+2026-11-19 22:40:24,523 - INFO - activation_op.py:1813 - activation fitting started for best/reduce_sum_softmax1/act_op
+2026-11-19 22:40:47,329 - INFO - activation_op.py:1813 - activation fitting started for best/reduce_sum_softmax2/act_op
+2026-11-19 22:44:32,763 - INFO - activation_op.py:1813 - activation fitting started for best/reduce_sum_softmax1/act_op
+2026-11-19 22:44:56,695 - INFO - activation_op.py:1813 - activation fitting started for best/reduce_sum_softmax2/act_op

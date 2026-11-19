@@ -1,1 +1,93 @@
 2026-09-24 09:55:23,054 - WARNING - __init__.py:56 - Cannot use graphviz, so no visualizations will be created
+2026-11-19 22:39:03,579 - WARNING - __init__.py:56 - Cannot use graphviz, so no visualizations will be created
+2026-11-19 22:39:06,786 - INFO - parser.py:158 - Translation started on ONNX model best
+2026-11-19 22:39:07,498 - INFO - parser.py:193 - Restored ONNX model best (completion time: 00:00:00.71)
+2026-11-19 22:39:08,136 - INFO - parser.py:216 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:01.35)
+2026-11-19 22:39:09,893 - INFO - onnx_translator.py:2656 - NMS structure of yolov6 (or equivalent architecture) was detected.
+2026-11-19 22:39:09,894 - INFO - onnx_translator.py:2658 - In order to use HailoRT post-processing capabilities, these end node names should be used: /model.23/cv2.0/cv2.0.2/Conv /model.23/cv3.0/cv3.0.2/Conv /model.23/cv3.1/cv3.1.2/Conv /model.23/cv2.1/cv2.1.2/Conv /model.23/cv2.2/cv2.2.2/Conv /model.23/cv3.2/cv3.2.2/Conv.
+2026-11-19 22:39:10,024 - INFO - parser.py:367 - Start nodes mapped from original model: 'images': 'best/input_layer1'.
+2026-11-19 22:39:10,025 - INFO - parser.py:368 - End nodes mapped from original model: '/model.23/cv2.0/cv2.0.2/Conv', '/model.23/cv2.1/cv2.1.2/Conv', '/model.23/cv2.2/cv2.2.2/Conv', '/model.23/cv3.0/cv3.0.2/Conv', '/model.23/cv3.1/cv3.1.2/Conv', '/model.23/cv3.2/cv3.2.2/Conv'.
+2026-11-19 22:39:10,158 - INFO - parser.py:289 - Translation completed on ONNX model best (completion time: 00:00:03.37)
+2026-11-19 22:39:11,459 - INFO - client_runner.py:504 - Loading model script commands to best from string
+2026-11-19 22:39:12,684 - INFO - calib_set_generator.py:130 - Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+2026-11-19 22:39:13,039 - IMPORTANT - sdk_backend.py:1133 - Starting Model Optimization
+2026-11-19 22:39:13,354 - INFO - mo_script_parser.py:91 - Model received quantization params from the hn
+2026-11-19 22:39:17,477 - INFO - algorithm_base.py:149 - MatmulDecompose skipped
+2026-11-19 22:39:17,629 - INFO - algorithm_base.py:152 - Starting Mixed Precision
+2026-11-19 22:39:19,088 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:01.46)
+2026-11-19 22:39:19,400 - INFO - algorithm_base.py:149 - LayerNorm Decomposition skipped
+2026-11-19 22:39:20,324 - INFO - algorithm_base.py:152 - Starting Statistics Collector
+2026-11-19 22:39:20,330 - INFO - stats_collection.py:89 - Using dataset with 64 entries for calibration
+2026-11-19 22:40:21,146 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Statistics Collector is done (completion time is 00:01:00.82)
+2026-11-19 22:40:23,047 - INFO - algorithm_base.py:152 - Starting Fix zp_comp Encoding
+2026-11-19 22:40:23,050 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+2026-11-19 22:40:23,051 - INFO - algorithm_base.py:152 - Starting Matmul Equalization
+2026-11-19 22:40:23,088 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Matmul Equalization is done (completion time is 00:00:00.04)
+2026-11-19 22:40:23,089 - INFO - algorithm_base.py:152 - Starting MatmulDecomposeFix
+2026-11-19 22:40:23,090 - INFO - algorithm_base.py:168 - Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+2026-11-19 22:41:20,690 - INFO - algorithm_base.py:149 - Finetune encoding skipped
+2026-11-19 22:41:20,693 - INFO - algorithm_base.py:149 - Bias Correction skipped
+2026-11-19 22:41:20,707 - INFO - algorithm_base.py:149 - Adaround skipped
+2026-11-19 22:41:20,717 - INFO - algorithm_base.py:152 - Starting Quantization-Aware Fine-Tuning
+2026-11-19 22:41:20,775 - INFO - qft.py:332 - Using dataset with 128 entries for finetune
+2026-11-19 22:42:10,147 - WARNING - qft.py:527 - Training cut by the user, proceed at your own peril
+2026-11-19 22:42:11,050 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Quantization-Aware Fine-Tuning is done (completion time is 00:00:49.39)
+2026-11-19 22:43:10,357 - INFO - parser.py:158 - Translation started on ONNX model best
+2026-11-19 22:43:10,448 - INFO - parser.py:193 - Restored ONNX model best (completion time: 00:00:00.09)
+2026-11-19 22:43:14,346 - INFO - parser.py:216 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:03.99)
+2026-11-19 22:43:16,126 - INFO - onnx_translator.py:2656 - NMS structure of yolov6 (or equivalent architecture) was detected.
+2026-11-19 22:43:16,127 - INFO - onnx_translator.py:2658 - In order to use HailoRT post-processing capabilities, these end node names should be used: /model.23/cv3.0/cv3.0.2/Conv /model.23/cv2.0/cv2.0.2/Conv /model.23/cv2.1/cv2.1.2/Conv /model.23/cv3.1/cv3.1.2/Conv /model.23/cv3.2/cv3.2.2/Conv /model.23/cv2.2/cv2.2.2/Conv.
+2026-11-19 22:43:16,257 - INFO - parser.py:367 - Start nodes mapped from original model: 'images': 'best/input_layer1'.
+2026-11-19 22:43:16,258 - INFO - parser.py:368 - End nodes mapped from original model: '/model.23/cv2.0/cv2.0.2/Conv', '/model.23/cv2.1/cv2.1.2/Conv', '/model.23/cv2.2/cv2.2.2/Conv', '/model.23/cv3.0/cv3.0.2/Conv', '/model.23/cv3.1/cv3.1.2/Conv', '/model.23/cv3.2/cv3.2.2/Conv'.
+2026-11-19 22:43:16,393 - INFO - parser.py:289 - Translation completed on ONNX model best (completion time: 00:00:06.04)
+2026-11-19 22:43:17,709 - INFO - client_runner.py:504 - Loading model script commands to best from string
+2026-11-19 22:43:18,303 - INFO - calib_set_generator.py:130 - Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+2026-11-19 22:43:18,659 - IMPORTANT - sdk_backend.py:1133 - Starting Model Optimization
+2026-11-19 22:43:18,996 - INFO - mo_script_parser.py:91 - Model received quantization params from the hn
+2026-11-19 22:43:22,911 - INFO - algorithm_base.py:149 - MatmulDecompose skipped
+2026-11-19 22:43:23,063 - INFO - algorithm_base.py:152 - Starting Mixed Precision
+2026-11-19 22:43:23,784 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.72)
+2026-11-19 22:43:24,100 - INFO - algorithm_base.py:149 - LayerNorm Decomposition skipped
+2026-11-19 22:43:25,034 - INFO - algorithm_base.py:152 - Starting Statistics Collector
+2026-11-19 22:43:25,038 - INFO - stats_collection.py:89 - Using dataset with 64 entries for calibration
+2026-11-19 22:44:29,383 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Statistics Collector is done (completion time is 00:01:04.34)
+2026-11-19 22:44:31,302 - INFO - algorithm_base.py:152 - Starting Fix zp_comp Encoding
+2026-11-19 22:44:31,305 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+2026-11-19 22:44:31,305 - INFO - algorithm_base.py:152 - Starting Matmul Equalization
+2026-11-19 22:44:31,339 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Matmul Equalization is done (completion time is 00:00:00.03)
+2026-11-19 22:44:31,340 - INFO - algorithm_base.py:152 - Starting MatmulDecomposeFix
+2026-11-19 22:44:31,341 - INFO - algorithm_base.py:168 - Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+2026-11-19 22:45:28,040 - INFO - algorithm_base.py:149 - Finetune encoding skipped
+2026-11-19 22:45:28,044 - INFO - algorithm_base.py:149 - Bias Correction skipped
+2026-11-19 22:45:28,060 - INFO - algorithm_base.py:149 - Adaround skipped
+2026-11-19 22:45:28,071 - INFO - algorithm_base.py:152 - Starting Quantization-Aware Fine-Tuning
+2026-11-19 22:45:28,107 - INFO - qft.py:332 - Using dataset with 128 entries for finetune
+2026-11-19 22:57:57,796 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Quantization-Aware Fine-Tuning is done (completion time is 00:12:28.79)
+2026-11-19 22:58:10,728 - INFO - algorithm_base.py:152 - Starting Layer Noise Analysis
+2026-11-19 23:01:44,537 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Layer Noise Analysis is done (completion time is 00:03:33.81)
+2026-11-19 23:01:44,818 - INFO - quant_checker.py:125 - Output layers signal-to-noise ratio (SNR): measures the quantization noise (higher is better)
+2026-11-19 23:01:44,819 - INFO - quant_checker.py:130 - 	best/output_layer1 SNR:	16.78 dB
+2026-11-19 23:01:44,820 - INFO - quant_checker.py:130 - 	best/output_layer3 SNR:	18.42 dB
+2026-11-19 23:01:44,822 - INFO - quant_checker.py:130 - 	best/output_layer5 SNR:	20.47 dB
+2026-11-19 23:01:44,822 - INFO - quant_checker.py:130 - 	best/output_layer2 SNR:	31.26 dB
+2026-11-19 23:01:44,823 - INFO - quant_checker.py:130 - 	best/output_layer4 SNR:	29.37 dB
+2026-11-19 23:01:44,823 - INFO - quant_checker.py:130 - 	best/output_layer6 SNR:	23.92 dB
+2026-11-19 23:01:55,622 - IMPORTANT - sdk_backend.py:1145 - Model Optimization is done
+2026-11-19 23:05:30,014 - INFO - parser.py:158 - Translation started on ONNX model best
+2026-11-19 23:05:30,124 - INFO - parser.py:193 - Restored ONNX model best (completion time: 00:00:00.11)
+2026-11-19 23:05:40,045 - INFO - parser.py:216 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:10.03)
+2026-11-19 23:05:41,814 - INFO - onnx_translator.py:2656 - NMS structure of yolov6 (or equivalent architecture) was detected.
+2026-11-19 23:05:41,815 - INFO - onnx_translator.py:2658 - In order to use HailoRT post-processing capabilities, these end node names should be used: /model.23/cv2.0/cv2.0.2/Conv /model.23/cv3.0/cv3.0.2/Conv /model.23/cv2.1/cv2.1.2/Conv /model.23/cv3.1/cv3.1.2/Conv /model.23/cv2.2/cv2.2.2/Conv /model.23/cv3.2/cv3.2.2/Conv.
+2026-11-19 23:05:41,947 - INFO - parser.py:367 - Start nodes mapped from original model: 'images': 'best/input_layer1'.
+2026-11-19 23:05:41,948 - INFO - parser.py:368 - End nodes mapped from original model: '/model.23/cv2.0/cv2.0.2/Conv', '/model.23/cv2.1/cv2.1.2/Conv', '/model.23/cv2.2/cv2.2.2/Conv', '/model.23/cv3.0/cv3.0.2/Conv', '/model.23/cv3.1/cv3.1.2/Conv', '/model.23/cv3.2/cv3.2.2/Conv'.
+2026-11-19 23:05:42,124 - INFO - parser.py:289 - Translation completed on ONNX model best (completion time: 00:00:12.11)
+2026-11-19 23:05:43,465 - INFO - client_runner.py:504 - Loading model script commands to best from string
+2026-11-19 23:05:44,074 - INFO - calib_set_generator.py:130 - Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+2026-11-19 23:05:44,438 - IMPORTANT - sdk_backend.py:1133 - Starting Model Optimization
+2026-11-19 23:05:45,145 - INFO - mo_script_parser.py:91 - Model received quantization params from the hn
+2026-11-19 23:05:49,464 - INFO - algorithm_base.py:149 - MatmulDecompose skipped
+2026-11-19 23:05:49,616 - INFO - algorithm_base.py:152 - Starting Mixed Precision
+2026-11-19 23:05:50,358 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.74)
+2026-11-19 23:05:50,684 - INFO - algorithm_base.py:149 - LayerNorm Decomposition skipped
+2026-11-19 23:05:51,636 - INFO - algorithm_base.py:152 - Starting Statistics Collector
+2026-11-19 23:05:51,641 - INFO - stats_collection.py:89 - Using dataset with 64 entries for calibration
