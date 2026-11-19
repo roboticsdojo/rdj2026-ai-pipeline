@@ -26,6 +26,9 @@ RUN pip install --no-cache-dir --upgrade pip && \
     mlflow \
     jupyter-server-proxy
 
+# Set runtime environment variable
+ENV USER=root
+
 # Configure default workspace
 WORKDIR /workspace
 
