@@ -91,3 +91,87 @@
 2026-11-19 23:05:50,684 - INFO - algorithm_base.py:149 - LayerNorm Decomposition skipped
 2026-11-19 23:05:51,636 - INFO - algorithm_base.py:152 - Starting Statistics Collector
 2026-11-19 23:05:51,641 - INFO - stats_collection.py:89 - Using dataset with 64 entries for calibration
+2026-11-19 23:06:56,911 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Statistics Collector is done (completion time is 00:01:05.27)
+2026-11-19 23:06:58,803 - INFO - algorithm_base.py:152 - Starting Fix zp_comp Encoding
+2026-11-19 23:06:58,805 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+2026-11-19 23:06:58,806 - INFO - algorithm_base.py:152 - Starting Matmul Equalization
+2026-11-19 23:06:58,838 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Matmul Equalization is done (completion time is 00:00:00.03)
+2026-11-19 23:06:58,839 - INFO - algorithm_base.py:152 - Starting MatmulDecomposeFix
+2026-11-19 23:06:58,840 - INFO - algorithm_base.py:168 - Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+2026-11-19 23:07:58,336 - INFO - algorithm_base.py:149 - Finetune encoding skipped
+2026-11-19 23:07:58,340 - INFO - algorithm_base.py:149 - Bias Correction skipped
+2026-11-19 23:07:58,357 - INFO - algorithm_base.py:149 - Adaround skipped
+2026-11-19 23:07:58,367 - INFO - algorithm_base.py:152 - Starting Quantization-Aware Fine-Tuning
+2026-11-19 23:07:58,401 - INFO - qft.py:332 - Using dataset with 128 entries for finetune
+2026-11-19 23:19:32,238 - WARNING - qft.py:527 - Training cut by the user, proceed at your own peril
+2026-11-19 23:19:33,182 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Quantization-Aware Fine-Tuning is done (completion time is 00:11:33.87)
+2026-11-19 23:26:05,140 - WARNING - __init__.py:56 - Cannot use graphviz, so no visualizations will be created
+2026-11-19 23:26:05,159 - INFO - main.py:34 - Current Time: 23:26:05, 11/19/26
+2026-11-19 23:26:06,229 - INFO - main.py:46 - CPU: Architecture: x86_64, Model: AMD EPYC 9354 32-Core Processor, Number Of Cores: 128, Utilization: 3.7%
+2026-11-19 23:26:06,230 - INFO - main.py:50 - Memory: Total: 251GB, Available: 203GB
+2026-11-19 23:26:06,230 - INFO - main.py:54 - System info: OS: Linux, Kernel: 5.14.0-687.61.1.el9_8.x86_64
+2026-11-19 23:26:06,231 - INFO - main.py:55 - Hailo DFC Version: 3.34.0
+2026-11-19 23:26:06,231 - INFO - main.py:60 - HailoRT Version: Not Installed
+2026-11-19 23:26:06,235 - INFO - main.py:76 - PCIe: No Hailo PCIe device was found
+2026-11-19 23:26:06,235 - INFO - main.py:109 - Running `hailo --version`
+2026-11-19 23:28:00,241 - WARNING - __init__.py:56 - Cannot use graphviz, so no visualizations will be created
+2026-11-19 23:28:00,256 - INFO - main.py:34 - Current Time: 23:28:00, 11/19/26
+2026-11-19 23:28:01,325 - INFO - main.py:46 - CPU: Architecture: x86_64, Model: AMD EPYC 9354 32-Core Processor, Number Of Cores: 128, Utilization: 3.5%
+2026-11-19 23:28:01,325 - INFO - main.py:50 - Memory: Total: 251GB, Available: 203GB
+2026-11-19 23:28:01,325 - INFO - main.py:54 - System info: OS: Linux, Kernel: 5.14.0-687.61.1.el9_8.x86_64
+2026-11-19 23:28:01,326 - INFO - main.py:55 - Hailo DFC Version: 3.34.0
+2026-11-19 23:28:01,326 - INFO - main.py:60 - HailoRT Version: Not Installed
+2026-11-19 23:28:01,330 - INFO - main.py:76 - PCIe: No Hailo PCIe device was found
+2026-11-19 23:28:01,330 - INFO - main.py:109 - Running `hailo --version`
+2026-11-19 23:34:34,484 - WARNING - __init__.py:56 - Cannot use graphviz, so no visualizations will be created
+2026-11-19 23:34:34,499 - INFO - main.py:34 - Current Time: 23:34:34, 11/19/26
+2026-11-19 23:34:35,569 - INFO - main.py:46 - CPU: Architecture: x86_64, Model: AMD EPYC 9354 32-Core Processor, Number Of Cores: 128, Utilization: 4.0%
+2026-11-19 23:34:35,570 - INFO - main.py:50 - Memory: Total: 251GB, Available: 186GB
+2026-11-19 23:34:35,570 - INFO - main.py:54 - System info: OS: Linux, Kernel: 5.14.0-687.61.1.el9_8.x86_64
+2026-11-19 23:34:35,571 - INFO - main.py:55 - Hailo DFC Version: 3.34.0
+2026-11-19 23:34:35,571 - INFO - main.py:60 - HailoRT Version: Not Installed
+2026-11-19 23:34:35,575 - INFO - main.py:76 - PCIe: No Hailo PCIe device was found
+2026-11-19 23:34:35,575 - INFO - main.py:109 - Running `hailo --version`
+2026-11-19 23:34:41,543 - WARNING - __init__.py:56 - Cannot use graphviz, so no visualizations will be created
+2026-11-19 23:34:45,122 - INFO - parser.py:158 - Translation started on ONNX model best
+2026-11-19 23:34:45,208 - INFO - parser.py:193 - Restored ONNX model best (completion time: 00:00:00.09)
+2026-11-19 23:34:45,847 - INFO - parser.py:216 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.73)
+2026-11-19 23:34:47,621 - INFO - onnx_translator.py:2656 - NMS structure of yolov6 (or equivalent architecture) was detected.
+2026-11-19 23:34:47,623 - INFO - onnx_translator.py:2658 - In order to use HailoRT post-processing capabilities, these end node names should be used: /model.23/cv2.0/cv2.0.2/Conv /model.23/cv3.0/cv3.0.2/Conv /model.23/cv3.1/cv3.1.2/Conv /model.23/cv2.1/cv2.1.2/Conv /model.23/cv2.2/cv2.2.2/Conv /model.23/cv3.2/cv3.2.2/Conv.
+2026-11-19 23:34:47,756 - INFO - parser.py:367 - Start nodes mapped from original model: 'images': 'best/input_layer1'.
+2026-11-19 23:34:47,757 - INFO - parser.py:368 - End nodes mapped from original model: '/model.23/cv2.0/cv2.0.2/Conv', '/model.23/cv2.1/cv2.1.2/Conv', '/model.23/cv2.2/cv2.2.2/Conv', '/model.23/cv3.0/cv3.0.2/Conv', '/model.23/cv3.1/cv3.1.2/Conv', '/model.23/cv3.2/cv3.2.2/Conv'.
+2026-11-19 23:34:47,895 - INFO - parser.py:289 - Translation completed on ONNX model best (completion time: 00:00:02.77)
+2026-11-19 23:34:49,990 - INFO - client_runner.py:504 - Loading model script commands to best from string
+2026-11-19 23:34:50,584 - INFO - calib_set_generator.py:130 - Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+2026-11-19 23:34:50,944 - IMPORTANT - sdk_backend.py:1133 - Starting Model Optimization
+2026-11-19 23:34:51,291 - INFO - mo_script_parser.py:91 - Model received quantization params from the hn
+2026-11-19 23:34:56,306 - INFO - algorithm_base.py:149 - MatmulDecompose skipped
+2026-11-19 23:34:56,464 - INFO - algorithm_base.py:152 - Starting Mixed Precision
+2026-11-19 23:34:57,193 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.73)
+2026-11-19 23:34:57,517 - INFO - algorithm_base.py:149 - LayerNorm Decomposition skipped
+2026-11-19 23:34:58,453 - INFO - algorithm_base.py:152 - Starting Statistics Collector
+2026-11-19 23:34:58,460 - INFO - stats_collection.py:89 - Using dataset with 64 entries for calibration
+2026-11-19 23:35:59,383 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Statistics Collector is done (completion time is 00:01:00.92)
+2026-11-19 23:36:01,302 - INFO - algorithm_base.py:152 - Starting Fix zp_comp Encoding
+2026-11-19 23:36:01,304 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+2026-11-19 23:36:01,305 - INFO - algorithm_base.py:152 - Starting Matmul Equalization
+2026-11-19 23:36:01,343 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Matmul Equalization is done (completion time is 00:00:00.04)
+2026-11-19 23:36:01,344 - INFO - algorithm_base.py:152 - Starting MatmulDecomposeFix
+2026-11-19 23:36:01,345 - INFO - algorithm_base.py:168 - Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+2026-11-19 23:37:04,991 - INFO - algorithm_base.py:149 - Finetune encoding skipped
+2026-11-19 23:37:04,995 - INFO - algorithm_base.py:149 - Bias Correction skipped
+2026-11-19 23:37:05,010 - INFO - algorithm_base.py:149 - Adaround skipped
+2026-11-19 23:37:05,021 - INFO - algorithm_base.py:152 - Starting Quantization-Aware Fine-Tuning
+2026-11-19 23:37:05,095 - INFO - qft.py:332 - Using dataset with 128 entries for finetune
+2026-11-19 23:49:28,116 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Quantization-Aware Fine-Tuning is done (completion time is 00:12:22.10)
+2026-11-19 23:49:41,149 - INFO - algorithm_base.py:152 - Starting Layer Noise Analysis
+2026-11-19 23:53:32,590 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Layer Noise Analysis is done (completion time is 00:03:51.44)
+2026-11-19 23:53:32,895 - INFO - quant_checker.py:125 - Output layers signal-to-noise ratio (SNR): measures the quantization noise (higher is better)
+2026-11-19 23:53:32,896 - INFO - quant_checker.py:130 - 	best/output_layer1 SNR:	16.78 dB
+2026-11-19 23:53:32,897 - INFO - quant_checker.py:130 - 	best/output_layer3 SNR:	18.42 dB
+2026-11-19 23:53:32,897 - INFO - quant_checker.py:130 - 	best/output_layer5 SNR:	20.47 dB
+2026-11-19 23:53:32,897 - INFO - quant_checker.py:130 - 	best/output_layer2 SNR:	31.26 dB
+2026-11-19 23:53:32,898 - INFO - quant_checker.py:130 - 	best/output_layer4 SNR:	29.37 dB
+2026-11-19 23:53:32,898 - INFO - quant_checker.py:130 - 	best/output_layer6 SNR:	23.92 dB
+2026-11-19 23:53:43,882 - IMPORTANT - sdk_backend.py:1145 - Model Optimization is done
+2026-11-19 23:53:43,957 - INFO - hailo_tools_runner.py:510 - To achieve optimal performance, set the compiler_optimization_level to "max" by adding performance_param(compiler_optimization_level=max) to the model script. Note that this may increase compilation time.

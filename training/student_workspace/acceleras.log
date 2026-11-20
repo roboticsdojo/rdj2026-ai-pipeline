@@ -5,3 +5,11 @@
 2026-11-19 22:40:47,329 - INFO - activation_op.py:1813 - activation fitting started for best/reduce_sum_softmax2/act_op
 2026-11-19 22:44:32,763 - INFO - activation_op.py:1813 - activation fitting started for best/reduce_sum_softmax1/act_op
 2026-11-19 22:44:56,695 - INFO - activation_op.py:1813 - activation fitting started for best/reduce_sum_softmax2/act_op
+2026-11-19 23:07:00,264 - INFO - activation_op.py:1813 - activation fitting started for best/reduce_sum_softmax1/act_op
+2026-11-19 23:07:24,906 - INFO - activation_op.py:1813 - activation fitting started for best/reduce_sum_softmax2/act_op
+2026-11-19 23:26:01,355 - INFO - nvidia_smi_gpu_selector.py:39 - No GPU chosen, Selected GPU 0
+2026-11-19 23:27:56,469 - INFO - nvidia_smi_gpu_selector.py:39 - No GPU chosen, Selected GPU 0
+2026-11-19 23:34:30,849 - INFO - __init__.py:28 - No GPU chosen and no suitable GPU found, falling back to CPU.
+2026-11-19 23:34:37,999 - INFO - __init__.py:28 - No GPU chosen and no suitable GPU found, falling back to CPU.
+2026-11-19 23:36:02,823 - INFO - activation_op.py:1813 - activation fitting started for best/reduce_sum_softmax1/act_op
+2026-11-19 23:36:28,199 - INFO - activation_op.py:1813 - activation fitting started for best/reduce_sum_softmax2/act_op
